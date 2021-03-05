@@ -33,24 +33,43 @@
 
 
 <div class="container mt-5 p-5">
-<h4 class="text-center">
-    Cómo Enviar Correo desde PHP desde un Formulario de Contacto Fácil..! 
-  </h4>
+  <h4 class="text-center">
+      Cómo Enviar Correo con PHP desde un Formulario de Contacto Fácil..! 
+    </h4>
   <hr>
 
 
+
+  <form class="mt-5 p-5" action="enviarEmail.php" method="POST">
+  <div class="row">
+    <div class="col">
+    <label for="exampleFormControlInput1">Nombre del Cliente</label>
+      <input type="text" name="nombreCliente" class="form-control" required>
+    </div>
+    <div class="col">
+    <label for="exampleFormControlInput1">Email del Cliente</label>
+      <input type="email" name="emailCliente" class="form-control" required>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" name="msjCliente" rows="3" required></textarea>
+      </div>
+    </div>
+  </div>
+
   <div class="row text-center">
   <div class="col-md-12"> 
-      <a class="btn btn-info" download="Mi_Excel" href="descargarExcel.php">Exportar Excel Ahora</a>
+      <a class="btn btn-info" download="Mi_Excel" href="descargarExcel.php">Envia Formulario de Contacto</a>
   </div>
 </div>
-
+</form>
 
 
 </div>
-
-
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
