@@ -55,7 +55,7 @@
   <div class="row mt-3">
     <div class="col">
       <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <label for="exampleFormControlTextarea1">Mensaje del Cliente</label>
         <textarea class="form-control" name="msjCliente" rows="3" required></textarea>
       </div>
     </div>
@@ -63,7 +63,7 @@
 
   <div class="row text-center">
   <div class="col-md-12"> 
-      <a class="btn btn-info" download="Mi_Excel" href="descargarExcel.php">Envia Formulario de Contacto</a>
+  <button type="sutmit" class="btn btn-info">Enviar Formulario de Contacto</button>
   </div>
 </div>
 </form>

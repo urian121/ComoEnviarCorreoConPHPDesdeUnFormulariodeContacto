@@ -1,17 +1,13 @@
 <?php
-$nombreCliente = $_REQUEST['nombreCliente'];
-$emailCliente  = $_REQUEST['emailCliente'];
-$msjCliente    = $_REQUEST['msjCliente'];
+$nombreCliente = $_POST['nombreCliente'];
+$emailCliente  = $_POST['emailCliente'];
+$msjCliente    = $_POST['msjCliente'];
 
 
-$paraCliente    = $msjCliente;
-$tituloCliente  = "Mi Formulario de Contacto..!";
-$mensajeCliente = "<!DOCTYPE html>".
-"<html>".
-"<html lang='es'>".
-    "<head>".
-    "<meta charset='UTF-8'>".
-    "<title>Email de Prueba</title>".
+$paraCliente    = $emailCliente;
+$tituloCliente  = "Mi Formulario de Contacto..";
+$mensajeCliente = "<html>".
+    "<head><title>Email de Prueba</title>".
     "<style>
     * {
         margin: 0;
@@ -46,8 +42,8 @@ $mensajeCliente = "<!DOCTYPE html>".
         margin-right: auto;
         display: block;
         padding:0px 0px 20px 0px;
-   }
-</style>
+    }
+    </style>
 </head>".
     "<body>" .
         "<div class='contenedor'>".
@@ -55,15 +51,19 @@ $mensajeCliente = "<!DOCTYPE html>".
             "<p>&nbsp;</p>" .
                 "<span>Felicitaciones <strong class='bold'>" . $nombreCliente . " . . .!</strong></span>" .
                 "<p>&nbsp;</p>" .
- 			    "<p>Su formulario de Contacto funciona perfectamen...!</p> " .
+ 			    "<p>Su formulario de Contacto funciona perfectamente...!</p> " .
                 "<p>&nbsp;</p>" .
                 "<p>&nbsp;</p>" .
+                "<p><strong>Mensaje: </strong> " . $msjCliente . " </p>" .
                 "<p>&nbsp;</p>" .
-        "<p>¡Gracias por suscribirse a mi Canal <span class='bold'> Wed Developer! </span> </p>" .
+        "<p>¡Gracias por suscribirse a mi Canal </p>" .
+        "<p>&nbsp;</p>" .
+        "<p><span class='bold'> Wed Developer! </span></p>" .
+        "<p>&nbsp;</p>" .
         "<p>".
-            "<a title='WebDeveloper' href='https://blogangular-c7858.web.app' target='_blank'>".
-                "<img src='https://www.permutasalcuadrado.com/assets/images/logo-mywebsite-urian-viera.svg' alt='' width='100px' />".
-            "</a>".
+            "<a title='WebDeveloper' href='https://blogangular-c7858.web.app'>". 
+                "<img src='https://www.google.com/imgres?imgurl=https://yt3.ggpht.com/ytc/AAUvwnjY8Foc9Ct0-w-QRRywhm0ZpqWa311gaebiyY4y%3Ds900-c-k-c0x00ffffff-no-rj&imgrefurl=https://www.youtube.com/channel/UCodSpPp_r_QnYIQYCjlyVGA&tbnid=DVxprGL7RdZC3M&vet=1&docid=gMUhMRzL85dPqM&w=900&h=900&source=sh/x/im' alt='Logo' width='100px'/>". 
+            "</a>". 
         "</p>" .
     "</div>" .
     "</body>" .
@@ -75,5 +75,8 @@ $cabecerasCliente .= 'From: Bogota Colombia<programadorphp2017@gmail.com>';
 $enviadoCliente   = mail($paraCliente, $tituloCliente, $mensajeCliente, $cabecerasCliente);
 
 
+echo "<script>
+    window.location='https://www.permutasalcuadrado.com/EnviarCorreoConPHP-FormulariodeContacto/index.php';
+</script>";
 
 ?>
