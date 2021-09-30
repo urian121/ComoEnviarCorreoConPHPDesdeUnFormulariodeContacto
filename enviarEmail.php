@@ -3,6 +3,12 @@ $nombreCliente = $_POST['nombreCliente'];
 $emailCliente  = $_POST['emailCliente'];
 $msjCliente    = $_POST['msjCliente'];
 
+//Si quisieramos envie el mismo email a multiples correos
+/*$to = "somebody@example.com, ";
+$to .= "nobody@example.com, ";
+$to .= "somebody_else@example.com";
+*/
+
 
 $paraCliente    = $emailCliente;
 $tituloCliente  = "Mi Formulario de Contacto..";
