@@ -10,6 +10,11 @@ de esta forma. En fin pueden probar este código estoy seguro que funcionara.
 $cliente        ="Alejandro";
 $usuario        ="Urian Viera";
 
+//Si quisieramos envie el mismo email a multiples correos
+/*$to = "somebody@example.com, ";
+$to .= "nobody@example.com, ";
+$to .= "somebody_else@example.com";
+*/
 $destinatario   = 'programadorphp2017@gmail.com';
 //$asunto         = utf8_decode("Cupón de Descuento)";
 $asunto         = "Bienvenido a WebDEeveloper";
