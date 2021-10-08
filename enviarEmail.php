@@ -21,7 +21,6 @@ $mensajeCliente = "<html>".
         box-sizing: border-box;
     }
     body {
-        font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 300;
         color: #888;
