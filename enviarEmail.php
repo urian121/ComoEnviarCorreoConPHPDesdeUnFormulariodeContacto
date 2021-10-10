@@ -81,7 +81,7 @@ $enviadoCliente   = mail($paraCliente, $tituloCliente, $mensajeCliente, $cabecer
 
 
 echo "<script>
-    window.location='https://www.permutasalcuadrado.com/EnviarCorreoConPHP-FormulariodeContacto/index.php';
+    window.location='index.php';
 </script>";
 
 ?>
