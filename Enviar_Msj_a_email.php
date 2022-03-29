@@ -17,7 +17,7 @@ $to .= "somebody_else@example.com";
 */
 $destinatario   = 'programadorphp2017@gmail.com';
 //$asunto         = utf8_decode("Cupón de Descuento)";
-$asunto         = "Bienvenido a WebDEeveloper";
+$asunto         = "Bienvenido a WebDeveloper";
 $cuerpoEmail    = ' 
 <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;">
     <tr>
