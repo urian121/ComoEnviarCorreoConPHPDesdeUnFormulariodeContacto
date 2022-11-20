@@ -89,7 +89,7 @@ $enviadoCliente   = mail($paraCliente, $tituloCliente, $mensajeCliente, $cabecer
     INCORRECTA EL CORREO NO LLEGARA DEBES ESTA PENDIENTE EN ESTO.
 */
 
-<?php
+
 /*
     $para    = $emailCliente;
     $nameFull = "Urian Viera";
