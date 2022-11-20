@@ -64,7 +64,7 @@ $EnvioCriador    = mail($destinatario,$asunto,$cuerpoEmail,$headers);
     INCORRECTA EL CORREO NO LLEGARA DEBES ESTA PENDIENTE EN ESTO.
 */
 
-<?php
+
 /*
     $para    = "programadorphp2017@gmail.com";
     $nameFull = "Urian Viera";
